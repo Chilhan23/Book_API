@@ -16,21 +16,21 @@ const routes = [
     {
         method: 'GET',
         path: '/books',
-        handler: getAllBooksHandler, // Pastikan pakai 's'
+        handler: getAllBooksHandler, 
     },
     {
         method: 'GET',
-        path: '/books/{bookId}', // Gunakan {bookId} agar sesuai dengan request.params di handler
+        path: '/books/{bookId}', 
         handler: getBookByIdHandler,
     },
     {
         method: 'PUT',
-        path: '/books/{bookId}', // Gunakan {bookId}
+        path: '/books/{bookId}', 
         handler: editBookByIdHandler,
     },
     {
         method: 'DELETE',
-        path: '/books/{bookId}', // Gunakan {bookId}
+        path: '/books/{bookId}', 
         handler: deleteBookByIdHandler,
     }
 ];
